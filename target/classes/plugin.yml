@@ -1,0 +1,11 @@
+name: VulcanLottery
+version: 1.0-SNAPSHOT
+main: net.vulcanmc.lottery.VulcanLottery
+description: |
+    Lottery Plugin
+author: puppy3276
+commands:
+   lottery:
+     description: Set yourself on fire.
+     aliases: [lotto, vulcanlottery]
+     permission: vulcan.lottery
