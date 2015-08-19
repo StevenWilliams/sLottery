@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>net.vulcanmc</groupId>
+    <groupId>org.stevenw.mc</groupId>
     <artifactId>lottery</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>VulcanLottery</name>
+    <name>sLottey</name>
     <description>Lottery Plugin</description>
 
     <repositories>
@@ -53,7 +53,7 @@
                     <relocations>
                         <relocation>
                             <pattern>mondocommand</pattern>
-                            <shadedPattern>net.vulcanmc.lottery.mondocommand</shadedPattern>
+                            <shadedPattern>org.stevenw.mc.slottery.mondocommand</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>
