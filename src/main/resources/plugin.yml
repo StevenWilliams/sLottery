@@ -1,11 +1,9 @@
-name: VulcanLottery
+name: sLottery
 version: 1.0-SNAPSHOT
-main: net.vulcanmc.lottery.VulcanLottery
+main: org.stevenw.mc.lottery.sLottery
 description: |
     Lottery Plugin
 author: puppy3276
 commands:
    lottery:
-     description: Set yourself on fire.
-     aliases: [lotto, vulcanlottery]
-     permission: vulcan.lottery
+     aliases: [lotto, sLottery]

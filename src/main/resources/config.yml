@@ -1,30 +1,32 @@
 # Permissions
 # ================
 # Player Commands:
-# vulcan.lottery.buy
-# vulcan.lottery.claim
-# vulcan.lottery.info
-# vulcan.lottery.list
-# vulcan.lottery.winners
+# sLottery.buy
+# sLottery.claim
+# sLottery.info
+# sLottery.list
+# sLottery.winners
 # Admin Commands:
-# vulcan.lottery.create
-# vulcan.lottery.draw
-# vulcan.lottery.reload
-# Lottery-Specific Permissions:
-# vulcan.lottery.LotteryName - base permission
-# vulcan.lottery.LotteryName.limit.bypass - bypass ticket limit
-# vulcan.lottery.LotteryName.buy - allows purchasing tickets
-# vulcan.lottery.LotteryName.warnings - receive reminders
-# vulcan.lottery.LotteryName.joinmsg - reminders on join
+# sLottery.create
+# sLottery.draw
+# sLottery.reload
+# VaultLottery-Specific Permissions:
+# sLottery.LotteryName - base permission
+# sLottery.{LotteryName}.limit.bypass - bypass ticket limit
+# sLottery.{LotteryName}.buy - allows purchasing tickets
+# sLottery.{LotteryName}.warnings - receive reminders
+# sLottery.{LotteryName}.joinmsg - reminders on join
 
 #in minutes
 save-interval: 5
-msg-prefix: "&2[VulcanLottery] "
+msg-prefix: "&2[sLottery] "
+no-permission: "{RED}No permissions to perform this action."
 
 lotteries:
-  LottoVulcan:
-    #if not set, use parent name (LottoVulcan)
-    display-name: '&4LottoVulcan'
+  LottoLotto:
+    type: "VaultLottery"
+    #if not set, use parent name (LottoLotto)
+    display-name: '&4LottoLotto'
     enabled: true
     allow-purchases: true
     automatic: true
@@ -45,10 +47,11 @@ lotteries:
       - 5m
       - 1m
      #WorldGuard - if not set, it will allow everywhere
-    remind: true;
+    remind: true
     allowed-regions:
       - gamblerlair
   EliteLotto:
+    type: "VaultLottery"
     enabled: true
     allow-purchases: true
     automatic: true
@@ -68,6 +71,6 @@ lotteries:
       - 10m
       - 5m
       - 1m
-    remind: true;
+    remind: true
     allowed-regions:
       - gamblerlair
